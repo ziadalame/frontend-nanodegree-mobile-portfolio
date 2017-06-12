@@ -42,19 +42,6 @@ module.exports = function (grunt) {
 				}]
 			}
 		},
-		inlinecss: {
-			options: {
-				preserveImportant: true,
-			},
-			main: {
-				files: [{
-					expand: true,                  // Enable dynamic expansion
-					cwd: 'src/',                   // Src matches are relative to this path
-					src: ['**/**/*.html'],   // Actual patterns to match
-					dest: 'dist/'                  // Destination path prefix
-				}]
-			}
-		},
 		imagemin: {
 			dist: {
 				options: {
@@ -111,11 +98,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-inline-css');
 	grunt.loadNpmTasks('grunt-pagespeed');
 
 	grunt.registerTask('test', ['jshint']);
 	grunt.registerTask('speed', ['pagespeed']);
-	grunt.registerTask('default', ['jshint', 'imagemin', 'cssmin', 'inlinecss', 'htmlmin', 'uglify']);
+	grunt.registerTask('default', ['jshint', 'imagemin', 'cssmin', 'htmlmin', 'uglify']);
 
 };
