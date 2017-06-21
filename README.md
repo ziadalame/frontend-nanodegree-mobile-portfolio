@@ -21,7 +21,7 @@ open index.html
 ##### How to Check
 
 To check for speed:
-- Use the following code to get a public url that you can enter inte (google page speed)[https://developers.google.com/speed/pagespeed/insights/]
+- Use the following code to get a public url that you can enter inte [google page speed](https://developers.google.com/speed/pagespeed/insights/)
 
 First start a local server using python
 ```
