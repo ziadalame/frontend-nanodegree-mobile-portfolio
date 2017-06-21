@@ -21,7 +21,7 @@ open index.html
 ##### How to Check
 
 To check for speed:
-- Use the following code to get a public url that you can enter inte [google page speed](https://developers.google.com/speed/pagespeed/insights/)
+- Use the following code to get a public url that you can enter into [google page speed](https://developers.google.com/speed/pagespeed/insights/)
 
 First start a local server using python
 ```
@@ -45,13 +45,13 @@ After that, run the command:
 grunt speed
 ```
 
-The above comman will log the speed in your terminal, instead of visiting the site every time.
+The above command will log the speed in your terminal, instead of visiting the site every time.
 
 ##### How this speed was achieved
 - Added CSS inline in HTML (to avoid blocking)
 - Minifying HTML (htmlmin)
 - Minifying CSS (cssmin)
-- Lint js to avoid errors when compressing. Make sure to use semi-colomns (jshint)
+- Lint .js files to avoid errors when compressing. Make sure to use semi-colomns (jshint)
 - Minifying JS (uglify)
 - Compress images (imagemin)
 
