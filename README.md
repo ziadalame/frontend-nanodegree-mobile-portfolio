@@ -67,5 +67,9 @@ The above command will log the speed in your terminal, instead of visiting the s
 - Moved all constant variables created inside the loop to outside.
 - Instead of getting the width of every pizza, I get the width of 1 pizza and apply it to all pizzas. This saves time instead of looping through elemnts and getting properties.
 
+### Acknowledgements
+
+A lot of search and inspiration has come from other projects but the submitted code has been fully written by myself.
+
 ### Contribution
 This project is licensed under the MIT license.
